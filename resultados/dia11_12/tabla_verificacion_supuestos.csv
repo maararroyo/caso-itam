@@ -1,0 +1,64 @@
+﻿param,celdas,supuesto,sobre,prueba,estadistico,p_valor,cumple_5pct
+d,todas,normalidad,residuos,Shapiro-Wilk,0.9771099401937079,0.16109108447004172,sí
+d,todas,normalidad,residuos,Kolmogorov-Smirnov,0.05697853924362317,0.9442193106360236,sí
+d,todas,normalidad,residuos,Jarque-Bera,7.184232149829448,0.0275399920345217,no
+d,todas,normalidad,efectos_aleatorios,Shapiro-Wilk,0.9846566654422155,0.45481801342562983,sí
+d,todas,normalidad,efectos_aleatorios,Kolmogorov-Smirnov,0.05065871628566543,0.9799688175013889,sí
+d,todas,normalidad,efectos_aleatorios,Jarque-Bera,0.0495073159257893,0.975550201454349,sí
+d,todas,homocedasticidad,residuos marginales,Breusch-Pagan,3.778407190040838,0.804917543383979,sí
+d,todas,homocedasticidad,residuos marginales,Goldfeld-Quandt,1.0238698326912865,0.47360889989440347,sí
+d,todas,homocedasticidad,residuos marginales,Harrison-McCabe,0.5264386808748147,0.633036696330367,sí
+d,sin_degeneradas,normalidad,residuos,Shapiro-Wilk,0.9817766062025732,0.3200768298996619,sí
+d,sin_degeneradas,normalidad,residuos,Kolmogorov-Smirnov,0.051217272485182486,0.9789869661072164,sí
+d,sin_degeneradas,normalidad,residuos,Jarque-Bera,1.5456137972564334,0.4617152598254529,sí
+d,sin_degeneradas,normalidad,efectos_aleatorios,Shapiro-Wilk,0.9862921766677557,0.5619704865845165,sí
+d,sin_degeneradas,normalidad,efectos_aleatorios,Kolmogorov-Smirnov,0.05066176811252576,0.9811274574312822,sí
+d,sin_degeneradas,normalidad,efectos_aleatorios,Jarque-Bera,0.04204655012959791,0.9791961734498403,sí
+d,sin_degeneradas,homocedasticidad,residuos marginales,Breusch-Pagan,3.567785625116013,0.8279944269778629,sí
+d,sin_degeneradas,homocedasticidad,residuos marginales,Goldfeld-Quandt,1.6834952450767473,0.07629268473641951,sí
+d,sin_degeneradas,homocedasticidad,residuos marginales,Harrison-McCabe,0.4498047711167716,0.2903709629037096,sí
+d,todas,atípicos,residuos,Mahalanobis robusta (MCD) > χ²₁(0.975); esperados ≈ 2,2.0,,
+d,todas,atípicos,efectos_aleatorios,Mahalanobis robusta (MCD) > χ²₁(0.975); esperados ≈ 2,1.0,,
+d,todas,colinealidad,X con efectos de año,Índice de condición (Belsley) < 30,5.125081304335166,,
+k,todas,normalidad,residuos,Shapiro-Wilk,0.9875119134739849,0.6405818951687882,sí
+k,todas,normalidad,residuos,Kolmogorov-Smirnov,0.08294179372844224,0.618666008717315,sí
+k,todas,normalidad,residuos,Jarque-Bera,1.6752509172988514,0.4327368559707264,sí
+k,todas,normalidad,efectos_aleatorios,Shapiro-Wilk,0.9854908536060344,0.5125937923035707,sí
+k,todas,normalidad,efectos_aleatorios,Kolmogorov-Smirnov,0.06542324618322293,0.8656900170315972,sí
+k,todas,normalidad,efectos_aleatorios,Jarque-Bera,1.1709759428265687,0.5568340763945866,sí
+k,todas,homocedasticidad,residuos marginales,Breusch-Pagan,1.2643970145228867,0.8673864893230994,sí
+k,todas,homocedasticidad,residuos marginales,Goldfeld-Quandt,0.826970595000295,0.6999515262677815,sí
+k,todas,homocedasticidad,residuos marginales,Harrison-McCabe,0.5795906811122284,0.8604139586041396,sí
+k,sin_degeneradas,normalidad,residuos,Shapiro-Wilk,0.9872714875312277,0.6419656140064225,sí
+k,sin_degeneradas,normalidad,residuos,Kolmogorov-Smirnov,0.07910414863677051,0.6910195451445706,sí
+k,sin_degeneradas,normalidad,residuos,Jarque-Bera,2.194563744577915,0.3337771005918762,sí
+k,sin_degeneradas,normalidad,efectos_aleatorios,Shapiro-Wilk,0.9838887261292864,0.439767175899376,sí
+k,sin_degeneradas,normalidad,efectos_aleatorios,Kolmogorov-Smirnov,0.07292190260929288,0.7799897702405263,sí
+k,sin_degeneradas,normalidad,efectos_aleatorios,Jarque-Bera,1.2868771081451262,0.5254824142226537,sí
+k,sin_degeneradas,homocedasticidad,residuos marginales,Breusch-Pagan,2.059205225630107,0.7248702568882052,sí
+k,sin_degeneradas,homocedasticidad,residuos marginales,Goldfeld-Quandt,0.7421739673046026,0.7905472220309842,sí
+k,sin_degeneradas,homocedasticidad,residuos marginales,Harrison-McCabe,0.6032355355715419,0.914008599140086,sí
+k,todas,atípicos,residuos,Mahalanobis robusta (MCD) > χ²₁(0.975); esperados ≈ 2,5.0,,
+k,todas,atípicos,efectos_aleatorios,Mahalanobis robusta (MCD) > χ²₁(0.975); esperados ≈ 2,5.0,,
+k,todas,colinealidad,X con efectos de año,Índice de condición (Belsley) < 30,4.236067977499785,,
+R,todas,normalidad,residuos,Shapiro-Wilk,0.9876942125017342,0.6442652945299507,sí
+R,todas,normalidad,residuos,Kolmogorov-Smirnov,0.07786556592632121,0.6876651564111136,sí
+R,todas,normalidad,residuos,Jarque-Bera,0.5956787078460356,0.7424205971248019,sí
+R,todas,normalidad,efectos_aleatorios,Shapiro-Wilk,0.9891502299689277,0.7407952006516806,sí
+R,todas,normalidad,efectos_aleatorios,Kolmogorov-Smirnov,0.09429182321026075,0.44818565255688525,sí
+R,todas,normalidad,efectos_aleatorios,Jarque-Bera,0.38414905111568964,0.8252453643287594,sí
+R,todas,homocedasticidad,residuos marginales,Breusch-Pagan,4.762851602036031,0.44550220247873384,sí
+R,todas,homocedasticidad,residuos marginales,Goldfeld-Quandt,0.6730201388832452,0.8660077836582528,sí
+R,todas,homocedasticidad,residuos marginales,Harrison-McCabe,0.5695602189554867,0.8109189081091891,sí
+R,sin_degeneradas,normalidad,residuos,Shapiro-Wilk,0.9810742671304888,0.2910620259789428,sí
+R,sin_degeneradas,normalidad,residuos,Kolmogorov-Smirnov,0.07179485907759214,0.7830962901935226,sí
+R,sin_degeneradas,normalidad,residuos,Jarque-Bera,1.433669222859589,0.4882954571146252,sí
+R,sin_degeneradas,normalidad,efectos_aleatorios,Shapiro-Wilk,0.9891430034888471,0.7474464654445744,sí
+R,sin_degeneradas,normalidad,efectos_aleatorios,Kolmogorov-Smirnov,0.09344558299441247,0.46736588704517357,sí
+R,sin_degeneradas,normalidad,efectos_aleatorios,Jarque-Bera,0.2636483328936043,0.8764950987782545,sí
+R,sin_degeneradas,homocedasticidad,residuos marginales,Breusch-Pagan,3.414473765557552,0.6363664828830602,sí
+R,sin_degeneradas,homocedasticidad,residuos marginales,Goldfeld-Quandt,0.7951729058492389,0.7363865429298382,sí
+R,sin_degeneradas,homocedasticidad,residuos marginales,Harrison-McCabe,0.5253775194103524,0.6445355464453555,sí
+R,todas,atípicos,residuos,Mahalanobis robusta (MCD) > χ²₁(0.975); esperados ≈ 2,3.0,,
+R,todas,atípicos,efectos_aleatorios,Mahalanobis robusta (MCD) > χ²₁(0.975); esperados ≈ 2,2.0,,
+R,todas,colinealidad,X con efectos de año,Índice de condición (Belsley) < 30,4.8938126163957865,,

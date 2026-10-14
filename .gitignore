@@ -1,0 +1,77 @@
+﻿# Datos crudos (no publicar)
+datos/crudos/
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+.conda/
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Archivos temporales
+*.tmp
+*.bak
+*.log
+~$*
+
+# Credenciales y configuraciones privadas
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+*.pem
+*.key
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+.migration_backup/
+dependencias_revision.txt
+diagnostico_notebooks.txt
+configuracion_rutas.txt
+migrar_repositorio.py
+diagnosticar.py
+extraer_rutas.py
+
+auditoria_codigo.txt
+auditar_codigo.py
+paquetes_instalados.txt
+paquetes_conda.txt
+generar_requirements.py
+
+# Microdatos procesados: conservar localmente, no publicar
+datos/procesados/envipe_incidentes.parquet
+datos/procesados/envipe_personas.parquet
+datos/procesados/fgj_carpetas.parquet
+
+# Resultados de nivel de registro
+resultados/supervivencia/fgj_rezago.parquet
+
+revision_publicacion.txt
+revisar_publicacion.py
+limpiar_notebooks.py
+
+inventariar_datos.py
+inventario_publicacion.txt
+
+# Resultados por tipo pendientes de revisar
+resultados/dia13_14/R_por_tipo_delito.parquet
+
+# Directorio de sedes con contactos institucionales
+datos/procesados/sedes_mp_territoriales.csv
+
+# Versiones intermedias del maestro
+datos/procesados/maestro_alcaldia_v0.parquet
+datos/procesados/maestro_alcaldia_v1.parquet
+datos/procesados/maestro_alcaldia_v2.parquet
+datos/procesados/maestro_alcaldia_v3.parquet
+
+# Script temporal de revision
+ultima_revision.py

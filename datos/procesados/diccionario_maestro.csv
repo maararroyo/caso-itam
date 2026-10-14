@@ -1,0 +1,54 @@
+﻿columna,descripcion,fuente,varia_por_anio
+cvegeo,Clave geográfica INEGI (entidad + municipio),INEGI,False
+cve_mun,"Clave de municipio INEGI, 3 dígitos. LLAVE de todos los pegados",INEGI,False
+nombre,Nombre normalizado de la alcaldía,Catálogo propio,False
+anio_ref,Año de referencia = año del hecho = año de la ENVIPE − 1,—,True
+C_nucleo,"Carpetas por alcaldía y año del HECHO — núcleo: BPCOD 04, 05, 10, 11, 13, 14 (alta + dudosas aceptadas). PRINCIPAL",FGJ datos abiertos (corte 31-ene-2025),True
+C_nucleo_alta,"Carpetas por alcaldía y año del HECHO — núcleo, solo confianza alta",FGJ datos abiertos (corte 31-ene-2025),True
+C_nucleo_vf,Carpetas por alcaldía y año del HECHO — núcleo + violencia familiar,FGJ datos abiertos (corte 31-ene-2025),True
+C_amplio,Carpetas por alcaldía y año del HECHO — todo lo asignado a un BPCOD salvo 03 y 15,FGJ datos abiertos (corte 31-ene-2025),True
+pob_total_conapo,Población total a mitad de año,CONAPO 1990–2040,True
+pob_18_conapo,Población de 18+; el tramo 18–19 se estima con la fracción del censo,CONAPO + Censo 2020,True
+pob_18_fem_conapo,Mujeres de 18+ (mismo método),CONAPO + Censo 2020,True
+pob_total_censo2020,Población total,"Censo 2020, ITER",False
+pob_18_censo2020,Población de 18+,"Censo 2020, ITER",False
+prop_fem_18,Mujeres de 18+ / población de 18+,"Censo 2020, ITER",False
+prop_ocupada_12,Población ocupada / población de 12+,"Censo 2020, ITER",False
+eje_socio_1,"PCA, eje 1 (74.3%). Positivo = más rezago","Censo 2020, ITER",False
+eje_socio_2,"PCA, eje 2 (12.3%). Positivo = más desocupación","Censo 2020, ITER",False
+tasa18_nucleo,C_nucleo por 100 mil habitantes de 18+ (CONAPO),FGJ + CONAPO,True
+tasa_tot_nucleo,C_nucleo por 100 mil habitantes totales (CONAPO),FGJ + CONAPO,True
+tasa18_nucleo_alta,C_nucleo_alta por 100 mil habitantes de 18+ (CONAPO),FGJ + CONAPO,True
+tasa_tot_nucleo_alta,C_nucleo_alta por 100 mil habitantes totales (CONAPO),FGJ + CONAPO,True
+tasa18_nucleo_vf,C_nucleo_vf por 100 mil habitantes de 18+ (CONAPO),FGJ + CONAPO,True
+tasa_tot_nucleo_vf,C_nucleo_vf por 100 mil habitantes totales (CONAPO),FGJ + CONAPO,True
+tasa18_amplio,C_amplio por 100 mil habitantes de 18+ (CONAPO),FGJ + CONAPO,True
+tasa_tot_amplio,C_amplio por 100 mil habitantes totales (CONAPO),FGJ + CONAPO,True
+factor_corte_nucleo,Factor por rezago del corte (31-ene-2025); ≠ 1 solo en 2024. NO aplicado a C,FGJ,True
+factor_sin_alc_nucleo,Factor de prorrateo de carpetas sin alcaldía. NO aplicado a C,FGJ,True
+S_total,"Carpetas del fuero común, por mes de REGISTRO",SESNSP 2015–2025,True
+S_nucleo,Carpetas SESNSP en subtipos equivalentes al núcleo,SESNSP 2015–2025,True
+S_vf,Carpetas SESNSP de violencia familiar,SESNSP 2015–2025,True
+tasa18_sesnsp_total,S_total por 100 mil habitantes de 18+ (CONAPO),SESNSP + CONAPO,True
+z_sesnsp_total,log(tasa18_sesnsp_total) estandarizado sobre las 80 filas,SESNSP + CONAPO,True
+tasa18_sesnsp_nucleo,S_nucleo por 100 mil habitantes de 18+ (CONAPO),SESNSP + CONAPO,True
+z_sesnsp_nucleo,log(tasa18_sesnsp_nucleo) estandarizado sobre las 80 filas,SESNSP + CONAPO,True
+S_fuera,SESNSP total − núcleo − violencia familiar,SESNSP 2015–2025,True
+tasa18_sesnsp_fuera,S_fuera por 100 mil habitantes de 18+ (CONAPO),SESNSP + CONAPO,True
+z_sesnsp_fuera,log(tasa18_sesnsp_fuera) estandarizado sobre las 80 filas,SESNSP + CONAPO,True
+area_km2,Superficie (proyección UTM 14N),Marco Geoestadístico 2020,False
+log_densidad,log(población censo 2020 / km²),Censo 2020 + Marco Geoestadístico,False
+n_sedes_mp,Sedes territoriales del MP (Coordinaciones Territoriales),"FGJ, Servicios y sedes (lista 2026)",False
+n_agencias_mp,Agencias territoriales (códigos dentro de cada sede),"FGJ, Servicios y sedes (lista 2026)",False
+sedes_mp_100k,Sedes por 100 mil habitantes de 18+ (censo),FGJ + Censo 2020,False
+agencias_mp_100k,Agencias por 100 mil habitantes de 18+ (censo),FGJ + Censo 2020,False
+dist_mp_km,"Distancia en línea recta a la sede más cercana, ponderada por población (AGEB urbanas + localidades rurales)",FGJ + Censo (AGEB e ITER) + Marco Geoestadístico,False
+dist_mp_km_urb,"Igual que dist_mp_km, solo AGEB urbanas (robustez)",FGJ + Censo AGEB + Marco Geoestadístico,False
+cobertura_total_pct,% de la población censal incluida en el cálculo de la distancia,Censo 2020,False
+z_prop_fem_18,prop_fem_18 estandarizada sobre las 16 alcaldías,"Censo 2020, ITER",False
+z_prop_ocupada_12,prop_ocupada_12 estandarizada sobre las 16 alcaldías,"Censo 2020, ITER",False
+z_log_densidad,log_densidad estandarizada sobre las 16 alcaldías,Censo 2020 + Marco Geoestadístico,False
+z_eje_socio_1,eje_socio_1 estandarizada sobre las 16 alcaldías,"Censo 2020, ITER",False
+z_eje_socio_2,eje_socio_2 estandarizada sobre las 16 alcaldías,"Censo 2020, ITER",False
+z_agencias_mp_100k,agencias_mp_100k estandarizada sobre las 16 alcaldías,FGJ + Censo 2020,False
+z_dist_mp_km,dist_mp_km estandarizada sobre las 16 alcaldías,FGJ + Censo (AGEB e ITER) + Marco Geoestadístico,False

@@ -1,0 +1,29 @@
+﻿columna,descripcion
+geografia,Geografía del dominio: ocurrencia (principal) o residencia (robustez)
+anio_envipe,Año del levantamiento ENVIPE
+anio_ref,Año de referencia = año del hecho = anio_envipe − 1 (LLAVE con el maestro)
+alc,"Clave INEGI de la alcaldía, 3 dígitos (LLAVE con el maestro: cve_mun)"
+nombre,Nombre de la alcaldía
+param,"d = P(denuncia|delito); k = P(carpeta|denuncia); R = P(carpeta|delito), estimado directo"
+n,Incidentes sin ponderar en el denominador (todos para d y R; denunciados para k)
+n_upm,UPM que aportan al menos un incidente al denominador
+est,Estimación directa (razón ponderada con FAC_DEL ajustado a CONAPO 18+ del anio_ref)
+ee,"Error estándar por linealización de Taylor (estratos EST_DIS, UPM UPM_DIS)"
+cv,Coeficiente de variación = ee/est (NaN si est = 0)
+deff,"Efecto de diseño = ee² / [est(1−est)/n] (NaN si est ∈ {0,1})"
+deff_kish,Parte del deff atribuible a pesos desiguales (Kish)
+n_efectiva,n / deff
+est_orig,Estimación con FAC_DEL original del INEGI (trazabilidad)
+ee_orig,Error estándar con FAC_DEL original del INEGI (trazabilidad)
+conf_inegi,"INEGI: alta (<15%), tolerable (15–30%), con reservas (>30%), degenerada, sin estimación"
+conf_builgil,"Buil-Gil: confiable (<25%), con cautela (25–50%), no usable (>50%), degenerada, sin estimación"
+tipo_celda,"normal | degenerada (est ∈ {0,1} o ee = 0, con n > 0) | sin estimación (n = 0)"
+tratamiento_modelo,Cómo entra la celda al modelo de áreas pequeñas
+theta,θ = arcsen(√est): variable respuesta del Fay-Herriot
+var_theta_asen,PRINCIPAL: var(θ) = deff_suav / (4n)
+deff_suav,deff mediano por geografía × parámetro (usado en var_theta_asen)
+n_ef_suav,n / deff_suav
+var_theta_asen_celda,SENSIBILIDAD: var(θ) con el deff de la propia celda
+var_yh,"SENSIBILIDAD: varianza de est (escala p) suavizada You–Hidiroglou, log(v) ~ log(n)"
+var_dir,Varianza directa de est (escala p) = ee²
+var_theta_dir,Varianza directa llevada a escala θ por método delta: var_dir / (4·est(1−est))
