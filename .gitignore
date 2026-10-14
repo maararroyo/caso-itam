@@ -75,3 +75,15 @@ datos/procesados/maestro_alcaldia_v3.parquet
 
 # Script temporal de revision
 ultima_revision.py
+
+preparar_actualizacion.py
+aplicar_actualizacion.py
+
+# Datos a nivel de carpeta individual
+resultados/modelo_supervivencia/fgj_rezago.parquet
+
+# Estimaciones por tipo pendientes de validar
+resultados/validacion_resultados/R_por_tipo_delito.parquet
+
+revision_final_rutas.txt
+verificar_rutas_finales.py
