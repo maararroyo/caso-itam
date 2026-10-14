@@ -87,3 +87,8 @@ resultados/validacion_resultados/R_por_tipo_delito.parquet
 
 revision_final_rutas.txt
 verificar_rutas_finales.py
+
+# Estimaciones que requieren filtrar publicable=True
+app/datos/R_por_tipo_delito.parquet
+
+preparar_datos_app.py
