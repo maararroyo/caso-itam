@@ -1,54 +1,54 @@
-﻿# Del delito a la carpeta de investigacion: una estimacion por alcaldia de la Ciudad de Mexico
+﻿# Del delito a la carpeta de investigacion: una estimación por alcaldía de la Ciudad de Mexico
 
-## Pregunta de investigacion
+## Pregunta de investigación
 
-¿Que fraccion de los delitos que ocurren en cada alcaldia de la Ciudad de Mexico llega a convertirse en una carpeta de investigacion, y por que varia esa fraccion entre alcaldias?
+¿Que fracción de los delitos que ocurren en cada alcaldía de la Ciudad de México llega a convertirse en una carpeta de investigación, y por qué varía esa fracción entre alcaldías?
 
 ## Resumen
 
-Este proyecto analiza la diferencia entre la incidencia delictiva estimada mediante encuestas de victimizacion y los delitos que llegan a registrarse formalmente en carpetas de investigacion.
+Este proyecto analiza la diferencia entre la incidencia delictiva estimada mediante encuestas de victimización y los delitos que llegan a registrarse formalmente en carpetas de investigación.
 
 Se descompone el proceso en tres probabilidades:
 
 - **d**: probabilidad de que un delito sea denunciado.
-- **k**: probabilidad de que una denuncia genere una carpeta de investigacion.
-- **R**: probabilidad de que un delito llegue a convertirse en una carpeta de investigacion.
+- **k**: probabilidad de que una denuncia genere una carpeta de investigación.
+- **R**: probabilidad de que un delito llegue a convertirse en una carpeta de investigación.
 
-Por definicion, R = d * k para las probabilidades poblacionales correspondientes.
+Por definición, R = d * k para las probabilidades poblacionales correspondientes.
 
-La investigacion compara las 16 alcaldias de la Ciudad de Mexico durante 2020-2024, usando cinco ediciones de ENVIPE y registros administrativos de la FGJ.
+La investigación compara las 16 alcaldías de la Ciudad de México durante 2020-2024, usando cinco ediciones de ENVIPE y registros administrativos de la FGJ.
 
 ## Principales hallazgos
 
-En terminos aproximados, por cada 100 delitos:
+En términos aproximados, por cada 100 delitos:
 
 - 11 llegan a denunciarse.
 - De cada 100 denuncias, 66 generan una carpeta.
-- Alrededor de 7 de cada 100 delitos se convierten en carpeta de investigacion.
+- Alrededor de 7 de cada 100 delitos se convierten en carpeta de investigación.
 
-Aunque las tasas registradas de carpetas presentan diferencias importantes entre alcaldias, el analisis no encuentra evidencia estadistica suficiente para afirmar que R difiere territorialmente.
+Aunque las tasas registradas de carpetas presentan diferencias importantes entre alcaldías, el análisis no encuentra evidencia estadística suficiente para afirmar que R difiere territorialmente.
 
-Las diferencias en los registros oficiales no deben interpretarse automaticamente como diferencias en la propension a denunciar o abrir carpetas.
+Las diferencias en los registros oficiales no deben interpretarse automáticamente como diferencias en la propensión a denunciar o abrir carpetas.
 
-## Metodologia
+## Metodología
 
-1. Integracion y armonizacion de cinco ediciones de ENVIPE.
-2. Vinculacion territorial con registros de la FGJ y fuentes demograficas.
-3. Estimacion directa de d, k y R con ponderadores de encuesta.
-4. Analisis de rezago entre ocurrencia del delito e inicio de carpeta.
-5. Estimacion en areas pequenas mediante modelos Fay-Herriot.
-6. Comparacion con modelos Rao-Yu y calibracion de estimaciones.
-7. Validacion estadistica, analisis de robustez y comparacion territorial.
+1. Integración y armonización de cinco ediciones de ENVIPE.
+2. Vinculacion territorial con registros de la FGJ y fuentes demográficas.
+3. Estimación directa de d, k y R con ponderadores de encuesta.
+4. Análisis de rezago entre ocurrencia del delito e inicio de carpeta.
+5. Estimación en áreas pequeñas mediante modelos Fay-Herriot.
+6. Comparación con modelos Rao-Yu y calibración de estimaciones.
+7. Validación estadística, análisis de robustez y comparación territorial.
 
 ## Estructura del repositorio
 
-- `notebooks/`: desarrollo metodologico en orden de ejecucion.
+- `notebooks/`: desarrollo metodológico en orden de ejecución.
 - `src/`: funciones reutilizables.
-- `datos/`: documentacion y archivos procesados seleccionados.
+- `datos/`: documentación y archivos procesados seleccionados.
 - `resultados/`: estimaciones, tablas y figuras.
-- `app/`: aplicacion interactiva.
-- `escrito/`: documento de investigacion.
-- `presentacion/`: materiales de presentacion.
+- `app/`: aplicación interactiva.
+- `escrito/`: documento de investigación.
+- `presentacion/`: materiales de presentación.
 
 ## Notebooks
 
@@ -69,26 +69,26 @@ conda env create -f environment.yml
 conda activate caso
 ```
 
-Abrir los notebooks desde la raiz del repositorio.
+Abrir los notebooks desde la raíz del repositorio.
 
-La ejecucion integral requiere descargar los archivos crudos indicados en `datos/README.md`.
+La ejecución integral requiere descargar los archivos crudos indicados en `datos/README.md`.
 
 ## Estado de reproducibilidad
 
-Los notebooks pasaron una auditoria estatica de sintaxis y se registraron las dependencias utilizadas. La ejecucion integral del pipeline desde un entorno limpio todavia no ha sido validada.
+Los notebooks pasaron una auditoría estática de sintaxis y se registraron las dependencias utilizadas. La ejecución integral del pipeline desde un entorno limpio todavía no ha sido validada.
 
-Los archivos de microdatos no se incluyen en el repositorio publico.
+Los archivos de microdatos no se incluyen en el repositorio público.
 
 ## Fuentes
 
-- INEGI: Encuesta Nacional de Victimizacion y Percepcion sobre Seguridad Publica (ENVIPE).
-- Fiscalia General de Justicia de la Ciudad de Mexico: carpetas de investigacion.
-- INEGI: Censo de Poblacion y Vivienda 2020, Marco Geoestadistico y ENSU.
-- CONAPO: proyecciones de poblacion.
-- SESNSP: incidencia delictiva del fuero comun.
+- INEGI: Encuesta Nacional de Victimización y Percepción sobre Seguridad Pública (ENVIPE).
+- Fiscalía General de Justicia de la Ciudad de México: carpetas de investigación.
+- INEGI: Censo de Población y Vivienda 2020, Marco Geoestadístico y ENSU.
+- CONAPO: proyecciones de población.
+- SESNSP: incidencia delictiva del fuero común.
 
 ## Limitaciones
 
-Los resultados dependen de la precision muestral de ENVIPE, la correspondencia entre clasificaciones delictivas, las diferencias entre lugar de residencia y ocurrencia, y los rezagos de registro administrativo.
+Los resultados dependen de la precisión muestral de ENVIPE, la correspondencia entre clasificaciones delictivas, las diferencias entre lugar de residencia y ocurrencia, y los rezagos de registro administrativo.
 
-La ausencia de diferencias estadisticamente detectables entre alcaldias no demuestra igualdad exacta.
+La ausencia de diferencias estadísticamente detectables entre alcaldías no demuestra igualdad exacta.
